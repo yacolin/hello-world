@@ -1,0 +1,25 @@
+<!--
+ * @Author: xjq
+ * @Date: 2021-01-05 19:10:46
+ * @LastEditors: xjq
+ * @LastEditTime: 2021-01-10 17:08:28
+ * @Description: 
+ * @FilePath: \hello-world\src\app\app.component.html
+-->
+
+<h1 class="title">Angular Router</h1>
+<div class="container">
+  <nav>
+    <a routerLink="/peek-a-boo-parent" routerLinkActive="active"
+      >peek-a-boo-parent</a
+    >
+    <a routerLink="/spy-parent" routerLinkActive="active">spy-parent</a>
+    <a routerLink="/on-changes-parent" routerLinkActive="active"
+      >on-changes-parent</a
+    >
+  </nav>
+
+  <aside class="content">
+    <router-outlet></router-outlet>
+  </aside>
+</div>
