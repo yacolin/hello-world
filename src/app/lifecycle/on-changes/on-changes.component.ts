@@ -2,9 +2,9 @@
  * @Author: xjq
  * @Date: 2021-01-10 16:54:01
  * @LastEditors: xjq
- * @LastEditTime: 2021-01-10 17:12:53
+ * @LastEditTime: 2021-01-15 09:37:16
  * @Description: on-changes.component
- * @FilePath: \hello-world\src\app\lifecycle\on-changes\on-changes.component.ts
+ * @FilePath: /hello-world/src/app/lifecycle/on-changes/on-changes.component.ts
  */
 import {
   Component,
@@ -22,7 +22,7 @@ class Hero {
   selector: 'on-changes-child',
   template: `
     <div class="hero">
-      <p>{{ hero.name }} can {{ power }}</p>
+      <p>{{ !!hero && hero.name }} can {{ power }}</p>
 
       <h4>-- Change Log --</h4>
       <div *ngFor="let chg of changeLog">{{ chg }}</div>
@@ -65,9 +65,7 @@ export class OnChangesComponent {
   power: string | undefined;
   title = 'OnChanges';
 
-  @ViewChild(OnChangesChildComponent) childView:
-    | OnChangesChildComponent
-    | undefined;
+  @ViewChild(OnChangesComponent) childView: OnChangesComponent | undefined;
 
   constructor() {
     this.reset();
