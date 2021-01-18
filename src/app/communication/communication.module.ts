@@ -18,6 +18,10 @@ import { VersionChildComponent } from './version/version-child.component';
 import { VersionParentComponent } from './version/version-parent.component';
 import { VoterComponent } from './voter/voter.component';
 import { VoteTakerComponent } from './voter/votertaker.component';
+import { CountdownLocalVarParentComponent, CountDownViewChildParentComponent } from './countdown/countdown-parent.component';
+import { CountdownTimerComponent } from './countdown/countdown-timer.component';
+import { AstronautComponent } from './astronaut/astronaut.component';
+import { MissionControlComponent } from './astronaut/missioncontrol.component';
 
 
 
@@ -32,6 +36,11 @@ import { VoteTakerComponent } from './voter/votertaker.component';
     VersionParentComponent,
     VoterComponent,
     VoteTakerComponent,
+    CountdownTimerComponent,
+    CountdownLocalVarParentComponent,
+    CountDownViewChildParentComponent,
+    AstronautComponent,
+    MissionControlComponent,
   ],
   imports: [
     CommonModule,
